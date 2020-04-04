@@ -1,26 +1,52 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import NavBar from './layout/navbar';
+import Users from './components/Users';
+import AddUser from './forms/AddUser';
+import UpdateUser from './forms/UpdateUser.js';
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import NotFound from "./pages/NotFound";
+import Contribute from './pages/Contribute';
 
-function App() {
+
+const Home = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <h3>Home Page</h3>
+  )
+}
+const About = () => {
+  return (
+    <h3>About</h3>
+  )
+}
+
+
+class App extends Component {
+ 
+  render(){
+  return (
+
+    <Router>
+      <div className="container">
+      <NavBar title = "CRUD App with React"/>
+       <hr></hr>
+
+      <Switch>
+        <Route exact path = "/" component = {Users} />
+        <Route exact path = "/add" component = {AddUser} />
+        <Route exact path = "/github" component = {Contribute} />
+        <Route exact path = "/edit/:id" component = {UpdateUser} />
+
+        <Route component = {NotFound} />
+       </Switch>
+      
+      </div>
+
+    </Router>
+    
+    
   );
+}
 }
 
 export default App;

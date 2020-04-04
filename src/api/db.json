@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "name": "Berkay Ozay",
+      "department": "Bilgisayar Muhendisi",
+      "salary": "5000",
+      "id": 2
+    },
+    {
+      "name": "Cankut Sevik",
+      "department": "Mimar",
+      "salary": "6000",
+      "id": 3
+    },
+    {
+      "name": "Kaan Karayali",
+      "department": "Elektrik Elektronik Muhendisi",
+      "salary": "6000",
+      "id": 4
+    }
+  ]
+}
