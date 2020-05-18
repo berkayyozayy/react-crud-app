@@ -8,9 +8,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 You can follow the Create React App steps to install in your local area.
 
-**Step 1: ** `npm install`
+**Step 1** : `npm install`
 
-**Step 1: ** `npm start`
+**Step 2** : `npm start`
 
 
 
