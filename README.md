@@ -10,7 +10,13 @@ You can follow the Create React App steps to install in your local area.
 
 **Step 1** : `npm install`
 
-**Step 2** : `npm start`
+**Step 2** : `npm install -g json-server`
+
+**Step 3** : `json-server --watch db.json`
+
+**Step 4** : `npm start`
+
+
 
 
 
